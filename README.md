@@ -2,6 +2,7 @@
 [<img src="images/thumbnail.png" width="400">](https://youtu.be/ZyD1YPW1h4U)
 
 This repository implements the work in the 2019 IJCV paper [**EKLT: Asynchronous, Photometric Feature Tracking using Events and Frames**](http://rpg.ifi.uzh.ch/docs/IJCV19_Gehrig.pdf) by Daniel Gehrig, [Henri Rebecq](http://henri.rebecq.fr), [Guillermo Gallego](http://www.guillermogallego.es), and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html).
+Also check out our feature tracking evaluation package [here](https://github.com/uzh-rpg/rpg_feature_tracking_analysis).
 
 ### Citation
 A pdf of the paper is [available here](http://rpg.ifi.uzh.ch/docs/IJCV19_Gehrig.pdf). If you use any of this code, please cite this publication as follows:
