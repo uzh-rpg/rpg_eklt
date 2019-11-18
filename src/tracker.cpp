@@ -404,7 +404,7 @@ void Tracker::bootstrapFeatureEvents(Patch& patch, const cv::Mat& event_frame)
     double s_I_yy = cv::sum(I_y.mul(I_y))[0];
     double s_I_xy = cv::sum(I_x.mul(I_y))[0];
     double s_I_xt = cv::sum(I_x.mul(event_frame))[0];
-    double s_I_yt = cv::sum(I_x.mul(event_frame))[0];
+    double s_I_yt = cv::sum(I_y.mul(event_frame))[0];
 
     cv::Mat M = (cv::Mat_<double>(2,2) << s_I_xx, s_I_xy, s_I_xy, s_I_yy);
     cv::Mat b = (cv::Mat_<double>(2,1) << s_I_xt, s_I_yt);
