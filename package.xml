@@ -6,7 +6,7 @@
 
   <maintainer email="daniel.gehrig18@gmail.com">Daniel Gehrig</maintainer>
 
-  <license>tbd</license>
+  <license>GPLv3</license>
 
   <buildtool_depend>catkin</buildtool_depend>
   <buildtool_depend>catkin_simple</buildtool_depend>
