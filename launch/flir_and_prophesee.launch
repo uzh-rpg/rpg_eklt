@@ -1,0 +1,10 @@
+<launch>
+    <arg name="trigger_topic" default="/prophesee/camera/extTrigger"/>
+    <arg name="image_topic" default="/flir/image_raw"/>
+    
+    <include file="$(find prophesee_ros_driver)/launch/prophesee_publisher.launch" />
+    <include file="$(find prophesee_ros_driver)/launch/prophesee_viewer.launch" />
+    <include file="$(find flir_blackfly)/launch/flir_blackfly.launch" />
+    <node name="synchronizer" pkg="synchronizer" type="synchronizer" args="--image_topic=$(arg image_topic) --trigger_topic=$(arg trigger_topic)"/>
+    <node name="visualization" pkg="rqt_gui" type="rqt_gui" args="--perspective-file=$(find synchronizer)/rqt/viz.perspective"/>
+</launch>
