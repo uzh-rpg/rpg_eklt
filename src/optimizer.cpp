@@ -82,6 +82,7 @@ bool Optimizer::precomputeLogImageArray(const tracker::Patches& patches, const t
     // store this for later use
     const ros::Time& t = image_it->first;
     optimizer_data_[t] = OptimizerDatum(grad, image_it->second, patches.size());
+    return true;
 }
 
 void Optimizer::optimizeParameters(const cv::Mat &event_frame, tracker::Patch &patch)

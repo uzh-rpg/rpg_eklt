@@ -4,6 +4,7 @@
 
 #include <image_transport/image_transport.h>
 #include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc_c.h>
 #include <ros/ros.h>
 
 #include "patch.h"
